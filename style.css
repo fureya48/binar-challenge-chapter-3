@@ -71,6 +71,38 @@
   font-size: 12px;
   margin: 0;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes ulangi {
+  100% {
+    transform: translateY(-8px);
+  }
+}
+.scroll {
+  margin: 15px 0 0 15px;
+}
+.scroll {
+  animation-name: melayang, ulangi;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5);
+}
 /* /Scroll Navigation */
 /* Page 1 */
 
@@ -88,6 +120,14 @@
   padding-bottom: 350px;
 }
 
+.kiri{
+  padding: 10px;
+}
+
+.kanan{
+  padding-left: 100px;
+}
+
 .carousel-indicators li {
   border-radius: 50%;
   margin-inline: 10px;
@@ -95,7 +135,6 @@
   height: 10px;
   background-color: white;
 }
-
 
 .caption {
   font-family: "Open Sans" sans-serif;
@@ -164,13 +203,13 @@
   color: aliceblue;
 }
 
-.page-4 #title{
+.page-4 #title {
   letter-spacing: 3px;
   font-family: "Open Sans" sans-serif;
   font-size: 30px;
 }
 
-.tabel h4{
+.tabel h4 {
   color: orange;
   font-family: "Open Sans" sans-serif;
   letter-spacing: 1px;
@@ -193,53 +232,158 @@
   background-image: url("assets/top-score-bg.png");
   background-size: contain;
   /* height: fit-content; */
-  height: 1200px;
+  height: 1011px;
   background-repeat: no-repeat;
 }
 
-.page-5 .container{
+.page-5 .container {
   padding-top: 160px;
 }
 
-.page-5 .teks{
+.page-5 .teks {
   padding-top: 210px;
   color: aliceblue;
 }
 
-#font{
+#font {
   font-family: "Open Sans" sans-serif;
   letter-spacing: 1px;
 }
 
-#font-2{
+#font-2 {
   color: white;
 }
 
-.page-5 .box{
+.page-5 .box {
   width: 400px;
-  height: 180px;
+  height: 160px;
+  background-color: rgb(23, 23, 23);
 }
 
-.box-1{
+.box-1 {
   margin-left: 280px;
   margin-bottom: 40px;
 }
 
-.box-2{
+.box-2 {
   margin-left: 150px;
   margin-bottom: 40px;
 }
 
-.box-3{
+.photo img {
+  position: absolute;
+  z-index: 1;
+}
+
+#background-photo {
+  background-color: orange;
+  width: 55px;
+  height: 55px;
+  padding: 20px;
+  position: relative;
+}
+
+#font-2 {
+  font-family: "Open Sans" sans-serif;
+  font-size: 15px;
+}
+
+#tanggal {
+  font-family: "Open Sans" sans-serif;
+  font-size: 12px;
+}
+
+.box-3 {
   margin-left: 280px;
   margin-bottom: 40px;
 }
-.page-5 .box-bawah{
+.page-5 .box-bawah {
   margin-top: 0;
   padding-top: 0px;
   font-size: small;
 }
 /* Page 5 */
+
+/* Page 6 */
+.page-6 {
+  background-image: url("assets/newsletter.png");
+  background-size: cover;
+  /* height: fit-content; */
+  background-repeat: no-repeat;
+}
+
+.gambar img {
+  margin: 200px 0px 10px 80px;
+}
+
+.page-6 .teks {
+  padding-top: 250px;
+}
+
+.teks h1 {
+  font-family: "Bebas Neue" cursive;
+  font-size: 280;
+  letter-spacing: 2px;
+}
+
+.form-control {
+  padding-right: 100px;
+  width: 120px;
+}
+
+.page-6 .btn {
+  padding: 8px 18px 8px 18px;
+  font-family: "Open Sans" sans-serif;
+  font-size: 12px;
+}
+
+#caption {
+  font-family: "Open Sans" sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.navigasi-bawah {
+  margin-top: 120px;
+  padding-left: 330px;
+  font-size: small;
+}
+
+.navigasi-bawah a {
+  color: aliceblue;
+  font-weight: bold;
+  margin-left: 25px;
+  font-size: small;
+  padding-left: 5px;
+  letter-spacing: 1px;
+}
+
+.navigasi-bawah img {
+  margin-left: 40px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: aliceblue;
+  margin-top: 40px;
+}
+
+.created {
+  font-family: "Bebas Nue" cursive;
+  font-size: small;
+  padding-top: 20px;
+}
+
+.privacy {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 0px;
+  padding-right: 0;
+  margin-right: 0;
+}
+/* Page 6 */
 /* Responsive */
 @media (max-width: 992px) {
   .page-1 {
